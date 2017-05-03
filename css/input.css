@@ -1,0 +1,86 @@
+/*------------------------------
+    输入框统一样式 START */
+input {
+    float: left;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 160px;
+    border: 1px solid #999999;
+    text-indent: 10px;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.objectCheckInput:focus {
+    border-color: #3187ff;
+    -webkit-box-shadow: 0 0 3px #3187ff;
+    -moz-box-shadow: 0 0 3px #3187ff;
+    box-shadow: 0 0 3px #3187ff;
+}
+
+.objectCheckInput.input-error {
+    border-color: #ff0000;
+    -webkit-box-shadow: 0 0 3px #ff0000;
+    -moz-box-shadow: 0 0 3px #ff0000;
+    box-shadow: 0 0 3px #ff0000;
+}
+
+.objectCheckInput.input-correct {
+    border-color: #008000;
+    -webkit-box-shadow: 0 0 3px #008000;
+    -moz-box-shadow: 0 0 3px #008000;
+    box-shadow: 0 0 3px #008000;
+}
+
+/*    输入框统一样式 END
+  ----------------------------------*/
+
+/*---------------------------------------------------
+	输入校验-错误消息提示统一样式						*/
+
+.checkResult {
+    color: #000000;
+    position: absolute;
+    display: block;
+    z-index: 99;
+    border: 1px solid #666666;
+    -webkit-box-shadow: 0 0 3px #666666;
+    -moz-box-shadow: 0 0 3px #666666;
+    box-shadow: 0 0 3px #666666;
+    background-color: #FFFFFF;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 0 15px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.checkResult:before {
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom-color: #333333;
+    width: 0;
+    height: 0;
+    content: ' ';
+    z-index: 9999;
+    left: 15px;
+    top: -20px;
+}
+
+.checkResult:after {
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom-color: #FFFFFF;
+    z-index: 9999;
+    width: 0;
+    height: 0;
+    content: ' ';
+    left: 15px;
+    top: -19px;
+}
+
+/*    输入校验-错误消息提示统一样式 END
+  ----------------------------------*/
